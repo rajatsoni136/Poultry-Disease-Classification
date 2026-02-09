@@ -58,5 +58,6 @@ def predictRoute():
     return jsonify([{"image": prediction_label}])
 
 if __name__ == "__main__":
-    # Host 0.0.0.0 allows it to run on the local network if needed
-    app.run(host='0.0.0.0', port=8080)
+    # Use the PORT environment variable if available, otherwise default to 8080
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)

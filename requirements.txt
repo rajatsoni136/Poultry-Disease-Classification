@@ -1,0 +1,8 @@
+flask
+flask-cors
+tensorflow==2.13.0
+pandas
+numpy
+scipy
+pyyaml
+pillow

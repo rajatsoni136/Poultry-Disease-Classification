@@ -1,0 +1,11 @@
+# Ignore Data and Models
+artifacts/
+
+# Ignore Python System files
+__pycache__/
+*.pyc
+venv/
+.DS_Store
+
+# Ignore Environment Variables
+.env
